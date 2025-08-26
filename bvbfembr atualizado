@@ -1,108 +1,215 @@
-<!DOCTYPE html>
+DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Borussia Dortmund Feminino - Fan Site</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Borussia Dortmund Frauen 25/26</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #111;
+      color: #f8f8f8;
+    }
+    header {
+      background: linear-gradient(90deg, #fdda24, #d4af37);
+      padding: 1rem;
+      text-align: center;
+      color: #000;
+      font-weight: bold;
+    }
+    nav {
+      background: #000;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 0.75rem;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav a {
+      color: #fdda24;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 2rem;
+    }
+    h2 {
+      color: #fdda24;
+      border-bottom: 2px solid #d4af37;
+      display: inline-block;
+      margin-bottom: 1rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: #222;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+      text-align: center;
+      padding-bottom: 1rem;
+      border: 1px solid #333;
+    }
+    .card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .card h3 {
+      margin: 0.5rem 0 0;
+      color: #fdda24;
+    }
+    .card p {
+      margin: 0.25rem 0;
+      color: #ddd;
+    }
+    footer {
+      background: #000;
+      color: #fdda24;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+      border-top: 2px solid #d4af37;
+    }
+    .highlight {
+      border: 2px solid #fdda24;
+    }
+    .credit {
+      font-size: 0.8rem;
+      color: #aaa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+      background: #222;
+    }
+    th, td {
+      padding: 0.75rem;
+      border: 1px solid #444;
+      text-align: center;
+    }
+    th {
+      background: #000;
+      color: #fdda24;
+    }
+    td {
+      color: #eee;
+    }
+  </style>
 </head>
-<body class="bg-gray-100 text-gray-900">
-
-  <!-- Header -->
-  <header class="bg-black text-yellow-400 p-4 flex justify-between items-center">
-    <h1 class="text-2xl font-bold">Borussia Dortmund Feminino</h1>
-    <nav class="space-x-4">
-      <a href="#noticias" class="hover:text-white">Notícias</a>
-      <a href="#jogadoras" class="hover:text-white">Jogadoras</a>
-      <a href="#elenco" class="hover:text-white">Elenco Atual</a>
-    </nav>
+<body>
+  <header>
+    <h1>Borussia Dortmund Frauen 2025/26</h1>
   </header>
 
-  <!-- Hero -->
-  <section class="bg-yellow-400 text-black text-center py-12">
-    <h2 class="text-4xl font-extrabold">Fan Site do BVB Frauen ⚽💛🖤</h2>
-    <img src="assets/img/hero.jpg" alt="Equipe BVB Frauen" class="mx-auto mt-6 rounded-2xl shadow-lg max-h-96">
-    <p class="mt-2 text-lg">Acompanhe as notícias e jogadoras do Borussia Dortmund Feminino</p>
-  </section>
+  <nav>
+    <a href="#elenco">Elenco</a>
+    <a href="#destaques">Destaques</a>
+    <a href="#noticias">Notícias</a>
+    <a href="#jogos">Próximos Jogos</a>
+    <a href="#staff">Comissão Técnica</a>
+  </nav>
 
-  <!-- Notícias -->
-  <section id="noticias" class="max-w-5xl mx-auto p-6">
-    <h3 class="text-3xl font-bold mb-6">📰 Últimas Notícias</h3>
-    
-    <!-- Vitória contra Leverkusen -->
-    <article class="bg-white rounded-2xl shadow-md overflow-hidden mb-6">
-      <img src="assets/img/leverkusen.jpg" alt="BVB Frauen vs Leverkusen" class="w-full">
-      <div class="p-4">
-        <h4 class="text-xl font-bold">Vitória histórica: BVB Frauen 6x0 Leverkusen</h4>
-        <p class="mt-2">
-          A equipe feminina do Borussia Dortmund iniciou sua primeira temporada na Regionalliga Oeste com uma vitória em casa.
-          A equipe recém-promovida derrotou o sub-23 do Bayer 04 Leverkusen por 6 a 0 diante de sua torcida no estádio Rote Erde.
-          Os gols foram marcados por <b>Jasmin Jabbes (3)</b>, <b>Dana Marquardt (2)</b> e <b>Ronja Leubner</b>.
-        </p>
-      </div>
-    </article>
-  </section>
-
-  <!-- Jogadoras (Fanmade) -->
-  <section id="jogadoras" class="max-w-5xl mx-auto p-6">
-    <h3 class="text-3xl font-bold mb-6">⭐ Jogadoras em Destaque (Fanmade)</h3>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      
-      <!-- Vanessa Kuhl -->
-      <div class="bg-white rounded-2xl shadow-md overflow-hidden">
-        <img src="assets/img/kuhl.jpg" alt="Vanessa Kuhl" class="w-full h-64 object-cover">
-        <div class="p-4">
-          <h4 class="font-bold text-xl">Vanessa Kuhl</h4>
-          <p>Jogos: 42 | Gols: 47 | Assistências: 36</p>
-        </div>
-      </div>
-
-      <!-- Marie Grothe -->
-      <div class="bg-white rounded-2xl shadow-md overflow-hidden">
-        <img src="assets/img/grothe.jpg" alt="Marie Grothe" class="w-full h-64 object-cover">
-        <div class="p-4">
-          <h4 class="font-bold text-xl">Marie Grothe</h4>
-          <p>Jogos: 26 | Gols: 35 | Assistências: 15</p>
-        </div>
-      </div>
-
-      <!-- Mandy Reinhardt -->
-      <div class="bg-white rounded-2xl shadow-md overflow-hidden">
-        <img src="assets/img/reinhardt.jpg" alt="Mandy Reinhardt" class="w-full h-64 object-cover">
-        <div class="p-4">
-          <h4 class="font-bold text-xl">Mandy Reinhardt</h4>
-          <p>Jogos: 26 | Gols: 34 | Assistências: 14</p>
-        </div>
-      </div>
-
+  <section id="elenco">
+    <h2>Elenco 2025/26</h2>
+    <div class="grid">
+      <div class="card"><h3>Laura van der Laan</h3><p>Goleira</p></div>
+      <div class="card"><h3>Minha Böger</h3><p>Defesa</p></div>
+      <div class="card"><h3>Jenske Steenwijk</h3><p>Defesa</p></div>
+      <div class="card"><h3>Jasmim Jabbes</h3><p>Ataque</p></div>
+      <div class="card"><h3>Hedda Wahle</h3><p>Defesa</p></div>
+      <div class="card"><h3>Mara Tayeh</h3><p>Defesa</p></div>
+      <div class="card"><h3>Noreen Günnewig</h3><p>Meio-campo</p></div>
+      <div class="card"><h3>Dana Marquardt</h3><p>Ataque</p></div>
+      <div class="card"><h3>Rita Schumacher</h3><p>Ataque</p></div>
+      <div class="card"><h3>Nora Willeke</h3><p>Meio-campo</p></div>
+      <div class="card"><h3>Paula Reimann</h3><p>Defesa</p></div>
+      <div class="card"><h3>Sara Ito</h3><p>Meio-campo</p></div>
+      <div class="card"><h3>Lúcia Wisniewski</h3><p>Ataque</p></div>
+      <div class="card"><h3>Ronja Leubner</h3><p>Meio-campo</p></div>
+      <div class="card"><h3>Celina Árvore</h3><p>Defesa</p></div>
+      <div class="card"><h3>Annika Enderle</h3><p>Ataque</p></div>
+      <div class="card"><h3>Ana-Sophie Vogel</h3><p>Defesa</p></div>
+      <div class="card"><h3>Frederike Kempe</h3><p>Defesa</p></div>
+      <div class="card"><h3>Melanie Schuster</h3><p>Defesa</p></div>
+      <div class="card"><h3>Carolina Blum</h3><p>Goleira</p></div>
+      <div class="card"><h3>Yasu Wöhrn</h3><p>Defesa</p></div>
+      <div class="card"><h3>Nova Wicke</h3><p>Meio-campo</p></div>
+      <div class="card"><h3>Emília Paulo</h3><p>Ataque</p></div>
+      <div class="card"><h3>Deniese Lichatschow</h3><p>Goleira</p></div>
+      <div class="card"><h3>Minha Scholle</h3><p>Ataque</p></div>
     </div>
   </section>
 
-  <!-- Elenco Atual -->
-  <section id="elenco" class="max-w-5xl mx-auto p-6">
-    <h3 class="text-3xl font-bold mb-6">👥 Elenco Atual 2024/25</h3>
-    <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-      <li class="bg-white rounded-xl shadow p-4">Laura van der Laan — Goleira</li>
-      <li class="bg-white rounded-xl shadow p-4">Mia Böger — Defesa</li>
-      <li class="bg-white rounded-xl shadow p-4">Jenske Steenwijk — Defesa</li>
-      <li class="bg-white rounded-xl shadow p-4">Jasmin Jabbes — Ataque</li>
-      <li class="bg-white rounded-xl shadow p-4">Dana Marquardt — Ataque</li>
-      <li class="bg-white rounded-xl shadow p-4">Rita Schumacher — Ataque</li>
-      <li class="bg-white rounded-xl shadow p-4">Nora Willeke — Meio-campo</li>
-      <li class="bg-white rounded-xl shadow p-4">Paula Reimann — Defesa</li>
-      <li class="bg-white rounded-xl shadow p-4">Sara Ito — Meio-campo</li>
-      <li class="bg-white rounded-xl shadow p-4">Lucy Wisniewski — Ataque</li>
-      <li class="bg-white rounded-xl shadow p-4">Ronja Leubner — Meio-campo</li>
-      <li class="bg-white rounded-xl shadow p-4">Celina Baum — Defesa</li>
-      <li class="bg-white rounded-xl shadow p-4">Annika Enderle — Ataque</li>
-      <li class="bg-white rounded-xl shadow p-4">Ann-Sophie Vogel — Defesa</li>
-    </ul>
+  <section id="destaques">
+    <h2>Destaques</h2>
+    <div class="grid">
+      <div class="card highlight">
+        <img src="https://www.darowski.com/bvb/assets/images/frauen/365/kuhl.jpg" alt="Vanessa Kuhl">
+        <h3>Vanessa Kuhl</h3>
+        <p>Ponta</p>
+        <p class="credit">Crédito: BVB / Darowski</p>
+      </div>
+      <div class="card highlight">
+        <img src="https://www.darowski.com/bvb/assets/images/frauen/365/grothe.jpg" alt="Marie Grothe">
+        <h3>Marie Grothe</h3>
+        <p>Atacante</p>
+        <p class="credit">Crédito: BVB / Darowski</p>
+      </div>
+      <div class="card highlight">
+        <img src="https://www.darowski.com/bvb/assets/images/frauen/365/reinhardt.jpg" alt="Mandy Reinhardt">
+        <h3>Mandy Reinhardt</h3>
+        <p>Atacante</p>
+        <p class="credit">Crédito: BVB / Darowski</p>
+      </div>
+    </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-black text-yellow-400 text-center p-4 mt-8">
-    <p>⚡ Fan Site do Borussia Dortmund Feminino — Feito por torcedores 💛🖤</p>
-  </footer>
+  <section id="noticias">
+    <h2>Notícias</h2>
+    <div class="card">
+      <img src="https://s7g10.scene7.com/is/image/BORUSSIADORTMUNDGMBHANDCOKGAA/Jubel-Frauen-Pokal-1:News-Teaser?ts=1755697416325&dpr=on,1&fmt=webp,,lossy&qlt=85" alt="BVB Frauen Notícias">
+      <h3>Vitória na Copa!</h3>
+      <p>O Borussia Dortmund Frauen conquista uma grande vitória na Copa, consolidando-se como uma das forças do futebol feminino.</p>
+      <p class="credit">Crédito: BVB / Scene7</p>
+    </div>
+  </section>
 
+  <section id="jogos">
+    <h2>Próximos Jogos</h2>
+    <table>
+      <tr><th>Data</th><th>Adversário</th><th>Competição</th><th>Local</th></tr>
+      <tr><td>10/09/2025</td><td>FC Köln</td><td>Bundesliga</td><td>Signal Iduna Park</td></tr>
+      <tr><td>18/09/2025</td><td>VfL Wolfsburg</td><td>Bundesliga</td><td>Volkswagen Arena</td></tr>
+      <tr><td>25/09/2025</td><td>Bayern München</td><td>Copa da Alemanha</td><td>Allianz Arena</td></tr>
+    </table>
+  </section>
+
+  <section id="staff">
+    <h2>Comissão Técnica</h2>
+    <div class="grid">
+      <div class="card"><h3>Marcos Högner</h3><p>Técnico Principal</p></div>
+      <div class="card"><h3>Tim Treude</h3><p>Assistente Técnico</p></div>
+      <div class="card"><h3>Dustin Wurst</h3><p>Assistente Técnico</p></div>
+      <div class="card"><h3>Josefina Plehn</h3><p>Treinadora de Goleiras</p></div>
+      <div class="card"><h3>Luísa Schulz</h3><p>Fisioterapeuta</p></div>
+      <div class="card"><h3>Benedito Terschluse</h3><p>Cientista Esportivo</p></div>
+      <div class="card"><h3>Marcel Merkel</h3><p>Líder de Gestão de Equipe</p></div>
+      <div class="card"><h3>Luísa Bergmann</h3><p>Gerente de Equipe</p></div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Borussia Dortmund Frauen. Todos os direitos reservados.</p>
+  </footer>
 </body>
 </html>
+
