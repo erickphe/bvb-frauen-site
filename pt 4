@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Fan site do Borussia Dortmund Feminino: notícias, jogadoras em destaque e elenco atualizado 2024/25.">
+  <title>Borussia Dortmund Feminino - Fan Site</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100 transition">
+
+  <!-- Header -->
+  <header class="bg-black text-yellow-400 p-4">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold flex items-center gap-2">
+        <img src="assets/img/logo.png" alt="BVB Logo" class="h-8">
+        Borussia Dortmund Feminino
+      </h1>
+      
+      <!-- Menu Desktop -->
+      <nav class="hidden md:flex space-x-6">
+        <a href="#noticias" class="hover:text-white transition">Notícias</a>
+        <a href="#jogadoras" class="hover:text-white transition">Jogadoras</a>
+        <a href="#elenco" class="hover:text-white transition">Elenco Atual</a>
+      </nav>
+
+      <!-- Botão Hamburger -->
+      <button id="menu-btn" class="md:hidden text-yellow-400 focus:outline-none">
+        ☰
+      </button>
+    </div>
+
+    <!-- Menu Mobile -->
+    <nav id="mobile-menu" class="hidden flex-col mt-2 space-y-2 md:hidden bg-black text-yellow-400 p-4 rounded-lg">
+      <a href="#noticias" class="hover:text-white">Notícias</a>
+      <a href="#jogadoras" class="hover:text-white">Jogadoras</a>
+      <a href="#elenco" class="hover:text-white">Elenco Atual</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative">
+    <img src="assets/img/hero.jpg" alt="Equipe BVB Frauen" class="w-full h-96 object-cover">
+    <div class="absolute inset-0 bg-yellow-400 bg-opacity-70 flex flex-col items-center justify-center text-black text-center">
+      <h2 class="text-4xl font-extrabold">Fan Site do BVB Frauen ⚽💛🖤</h2>
+      <p class="mt-2 text-lg">Acompanhe as notícias e jogadoras do Borussia Dortmund Feminino</p>
+    </div>
+  </section>
+
+  <!-- Notícias -->
+  <section id="noticias" class="max-w-5xl mx-auto p-6">
+    <h3 class="text-3xl font-bold mb-6">📰 Últimas Notícias</h3>
+    
+    <article class="bg-white dark:bg-gray-800 rounded-2xl shadow-md overflow-hidden mb-6 hover:shadow-lg transition">
+      <img src="assets/img/leverkusen.jpg" alt="BVB Frauen vs Leverkusen" class="w-full">
+      <div class="p-4">
+        <h4 class="text-xl font-bold">Vitória histórica: BVB Frauen 6x0 Leverkusen</h4>
+        <p class="mt-2">
+          A equipe feminina do Borussia Dortmund iniciou sua primeira temporada na Regionalliga Oeste com uma vitória em casa.
+          A equipe recém-promovida derrotou o sub-23 do Bayer 04 Leverkusen por 6 a 0 diante de sua torcida no estádio Rote Erde.
+          Os gols foram marcados por <b>Jasmin Jabbes (3)</b>, <b>Dana Marquardt (2)</b> e <b>Ronja Leubner</b>.
+        </p>
+      </div>
+    </article>
+  </section>
+
+  <!-- Jogadoras -->
+  <section id="jogadoras" class="max-w-5xl mx-auto p-6">
+    <h3 class="text-3xl font-bold mb-6">⭐ Jogadoras em Destaque (Fanmade)</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      
+      <!-- Vanessa Kuhl -->
+      <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-md overflow-hidden hover:scale-105 transition">
+        <img src="assets/img/kuhl.jpg" alt="Vanessa Kuhl" class="w-full h-64 object-cover">
+        <div class="p-4">
+          <h4 class="font-bold text-xl">Vanessa Kuhl</h4>
+          <p>Jogos: 42 | Gols: 47 | Assistências: 36</p>
+        </div>
+      </div>
+
+      <!-- Marie Grothe -->
+      <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-md overflow-hidden hover:scale-105 transition">
+        <img src="assets/img/grothe.jpg" alt="Marie Grothe" class="w-full h-64 object-cover">
+        <div class="p-4">
+          <h4 class="font-bold text-xl">Marie Grothe</h4>
+          <p>Jogos: 26 | Gols: 35 | Assistências: 15</p>
+        </div>
+      </div>
+
+      <!-- Mandy Reinhardt -->
+      <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-md overflow-hidden hover:scale-105 transition">
+        <img src="assets/img/reinhardt.jpg" alt="Mandy Reinhardt" class="w-full h-64 object-cover">
+        <div class="p-4">
+          <h4 class="font-bold text-xl">Mandy Reinhardt</h4>
+          <p>Jogos: 26 | Gols: 34 | Assistências: 14</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Elenco Atual -->
+  <section id="elenco" class="max-w-5xl mx-auto p-6">
+    <h3 class="text-3xl font-bold mb-6">👥 Elenco Atual 2024/25</h3>
+    <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <li class="bg-white dark:bg-gray-800 rounded-xl shadow p-4 hover:shadow-lg transition">Laura van der Laan — Goleira</li>
+      <li class="bg-white dark:bg-gray-800 rounded-xl shadow p-4 hover:shadow-lg transition">Mia Böger — Defesa</li>
+      <li class="bg-white dark:bg-gray-800 rounded-xl shadow p-4 hover:shadow-lg transition">Jenske Steenwijk — Defesa</li>
+      <li class="bg-white dark:bg-gray-800 rounded-xl shadow p-4 hover:shadow-lg transition">Jasmin Jabbes — Ataque</li>
+      <li class="bg-white dark:bg-gray-800 rounded-xl shadow p-4 hover:shadow-lg transition">Dana Marquardt — Ataque</li>
+      <li class="bg-white dark:bg-gray-800 rounded-xl shadow p-4 hover:shadow-lg transition">Rita Schumacher — Ataque</li>
+      <li class="bg-white dark:bg-gray-800 rounded-xl shadow p-4 hover:shadow-lg transition">Nora Willeke — Meio-campo</li>
+      <li class="bg-white dark:bg-gray-800 rounded-xl shadow p-4 hover:shadow-lg transition">Paula Reimann — Defesa</li>
+      <li class="bg-white dark:bg-gray-800 rounded-xl shadow p-4 hover:shadow-lg transition">Sara Ito — Meio-campo</li>
+      <li class="bg-white dark:bg-gray-800 rounded-xl shadow p-4 hover:shadow-lg transition">Lucy Wisniewski — Ataque</li>
+      <li class="bg-white dark:bg-gray-800 rounded-xl shadow p-4 hover:shadow-lg transition">Ronja Leubner — Meio-campo</li>
+      <li class="bg-white dark:bg-gray-800 rounded-xl shadow p-4 hover:shadow-lg transition">Celina Baum — Defesa</li>
+      <li class="bg-white dark:bg-gray-800 rounded-xl shadow p-4 hover:shadow-lg transition">Annika Enderle — Ataque</li>
+      <li class="bg-white dark:bg-gray-800 rounded-xl shadow p-4 hover:shadow-lg transition">Ann-Sophie Vogel — Defesa</li>
+    </ul>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-yellow-400 text-center p-6 mt-8">
+    <p class="mb-2">⚡ Fan Site do Borussia Dortmund Feminino — Feito por torcedores 💛🖤</p>
+    <div class="space-x-4">
+      <a href="https://twitter.com/BVB" target="_blank" rel="noopener noreferrer" class="hover:text-white">Twitter</a>
+      <a href="https://www.instagram.com/bvb09" target="_blank" rel="noopener noreferrer" class="hover:text-white">Instagram</a>
+      <a href="https://www.bvb.de/" target="_blank" rel="noopener noreferrer" class="hover:text-white">Site Oficial</a>
+    </div>
+  </footer>
+
+  <!-- Script para Menu -->
+  <script>
+    const btn = document.getElementById("menu-btn");
+    const menu = document.getElementById("mobile-menu");
+    btn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+  </script>
+
+</body>
+</html>
