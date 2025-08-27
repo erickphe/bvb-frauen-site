@@ -42,6 +42,7 @@
     header nav {
       display: flex; justify-content: space-between; align-items: center;
       padding: 1rem 2rem;
+      flex-wrap: wrap;
     }
     header nav h1 {
       color: #ffcc00;
@@ -50,6 +51,7 @@
     header nav ul {
       list-style: none;
       display: flex; gap: 1.5rem;
+      flex-wrap: wrap;
     }
     header nav ul li a {
       color: #fff;
@@ -73,7 +75,9 @@
       border-left: 6px solid #ffcc00;
       padding-left: 0.5rem;
     }
-    .news {
+
+    /* Cards */
+    .news, .featured-players {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 1.5rem;
@@ -83,15 +87,37 @@
       border: 1px solid #333;
       border-radius: 12px;
       overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+    }
+    .card:hover { 
+      transform: scale(1.05); 
+      box-shadow: 0 0 20px rgba(255, 204, 0, 0.6);
+    }
+    .card img { 
+      width: 100%; 
+      height: 200px; 
+      object-fit: cover; 
       transition: transform 0.3s;
     }
-    .card:hover { transform: scale(1.03); }
-    .card img { width: 100%; height: 200px; object-fit: cover; }
-    .card h3 { padding: 0.8rem; color: #ffcc00; }
-    .card p { padding: 0 0.8rem 1rem; }
+    .card:hover img {
+      transform: scale(1.1);
+    }
+    .card h3 { 
+      padding: 0.8rem; 
+      color: #ffcc00; 
+    }
+    .card p { 
+      padding: 0 0.8rem 1rem; 
+      font-size: 0.95rem;
+      line-height: 1.4;
+    }
 
+    /* Tabela de elenco */
     table {
-      width: 100%; border-collapse: collapse; margin-top: 1rem;
+      width: 100%; 
+      border-collapse: collapse; 
+      margin-top: 1rem;
     }
     table, th, td {
       border: 1px solid #444;
@@ -112,6 +138,25 @@
       border-top: 3px solid #ffcc00;
       margin-top: 2rem;
     }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .featured-players .card h3, 
+    .featured-players .card p {
+      transition: color 0.3s;
+    }
+    .featured-players .card:hover h3, 
+    .featured-players .card:hover p {
+      color: #fff;
+    }
+
+    @media(max-width:600px){
+      header nav { flex-direction: column; }
+      header nav ul { flex-direction: column; gap: 0.8rem; margin-top: 0.5rem; }
+      .card img { height: 180px; }
+    }
   </style>
 </head>
 <body>
@@ -125,6 +170,7 @@
         <li><a href="#titulos">Títulos</a></li>
         <li><a href="#jogos">Próximos Jogos</a></li>
         <li><a href="#marcantes">Jogos Marcantes</a></li>
+        <li><a href="#destaques">Destaques 25/26</a></li>
       </ul>
     </nav>
   </header>
@@ -138,26 +184,6 @@
           <img src="https://s7g10.scene7.com/is/image/BORUSSIADORTMUNDGMBHANDCOKGAA/Jubel-Frauen-Pokal-1:News-Teaser?ts=1755697416325&dpr=on,1&fmt=webp,,lossy&qlt=85" alt="Notícia BVB Frauen">
           <h3>Vitória histórica no Pokal</h3>
           <p>As mulheres do Borussia Dortmund comemoram mais um título no Kreispokal, conquistando pela quarta vez consecutiva.</p>
-        </div>
-        <div class="card">
-          <img src="https://www.darowski.com/bvb/assets/images/frauen/365/schroer.jpg" alt="Sandra Schröer">
-          <h3>Sandra Schröer</h3>
-          <p>#1 • Goleira segura e destaque da equipe em momentos decisivos.</p>
-        </div>
-        <div class="card">
-          <img src="https://www.darowski.com/bvb/assets/images/frauen/365/kuhl.jpg" alt="Vanessa Kuhl">
-          <h3>Vanessa Kuhl</h3>
-          <p>Uma das maiores jogadoras do time, referência no meio de campo.</p>
-        </div>
-        <div class="card">
-          <img src="https://www.darowski.com/bvb/assets/images/frauen/365/grothe.jpg" alt="Marie Grothe">
-          <h3>Marie Grothe</h3>
-          <p>Uma atacante mortal, sempre decisiva nas grandes partidas.</p>
-        </div>
-        <div class="card">
-          <img src="https://www.darowski.com/bvb/assets/images/frauen/365/reinhardt.jpg" alt="Mandy Reinhardt">
-          <h3>Mandy Reinhardt</h3>
-          <p>Destaque pelo talento e comprometimento dentro de campo.</p>
         </div>
       </div>
     </section>
@@ -235,6 +261,33 @@
     <section id="marcantes">
       <h2>Jogos Marcantes</h2>
       <p><strong>Borussia Dortmund x Schalke 04</strong> – O Rivierderby na final da Kreispokal, onde o Borussia Dortmund venceu por 2x0 em um jogo histórico.</p>
+    </section>
+
+    <!-- Jogadoras Destaques 25/26 -->
+    <section id="destaques">
+      <h2>Jogadoras Destaques 25/26</h2>
+      <div class="featured-players">
+        <div class="card">
+          <img src="https://www.darowski.com/bvb/assets/images/frauen/365/marquardt.jpg" alt="Dana Marquardt">
+          <h3>Dana Marquardt</h3>
+          <p>Ataque – Um dos principais nomes da equipe nesta temporada, decisiva em jogos importantes.</p>
+        </div>
+        <div class="card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOwi61cMi5aEn4Ei5EB6DbpWZ9fBjkzvtuGg&s" alt="Ronja Leubner">
+          <h3>Ronja Leubner</h3>
+          <p>Meio-campo – Destaque pelo controle de jogo e passes precisos.</p>
+        </div>
+        <div class="card">
+          <img src="https://www.darowski.com/bvb/assets/images/frauen/365/schumacher.jpg" alt="Rita Schumacher">
+          <h3>Rita Schumacher</h3>
+          <p>Ataque – Goleadora da temporada, sempre presente nos momentos decisivos.</p>
+        </div>
+        <div class="card">
+          <img src="https://www.darowski.com/bvb/assets/images/frauen/365/willeke.jpg" alt="Nora Willeke">
+          <h3>Nora Willeke</h3>
+          <p>Meio-campo – Criativa e responsável pela organização do time em campo.</p>
+        </div>
+      </div>
     </section>
   </main>
 
