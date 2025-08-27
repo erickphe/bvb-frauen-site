@@ -1,215 +1,194 @@
-DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Borussia Dortmund Frauen 25/26</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background: #111;
-      color: #f8f8f8;
+      background-color: #000;
+      color: #FFD700;
     }
     header {
-      background: linear-gradient(90deg, #fdda24, #d4af37);
-      padding: 1rem;
+      background: #111;
+      padding: 20px;
       text-align: center;
-      color: #000;
-      font-weight: bold;
+      border-bottom: 3px solid #FFD700;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: #FFD700;
     }
     nav {
-      background: #000;
-      display: flex;
-      justify-content: center;
-      gap: 1.5rem;
-      padding: 0.75rem;
-      position: sticky;
-      top: 0;
-      z-index: 10;
+      background: #222;
+      padding: 10px;
+      text-align: center;
     }
     nav a {
-      color: #fdda24;
+      color: #FFD700;
+      margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
     }
     section {
-      padding: 2rem;
+      padding: 30px;
+      border-bottom: 1px solid #444;
     }
     h2 {
-      color: #fdda24;
-      border-bottom: 2px solid #d4af37;
-      display: inline-block;
-      margin-bottom: 1rem;
+      color: #FFD700;
+      border-left: 5px solid #FFD700;
+      padding-left: 10px;
     }
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
     }
     .card {
-      background: #222;
-      border-radius: 12px;
+      background: #111;
+      border: 1px solid #FFD700;
+      border-radius: 10px;
       overflow: hidden;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.6);
       text-align: center;
-      padding-bottom: 1rem;
-      border: 1px solid #333;
+      padding: 15px;
     }
     .card img {
       width: 100%;
       height: auto;
-      display: block;
+      border-bottom: 2px solid #FFD700;
     }
-    .card h3 {
-      margin: 0.5rem 0 0;
-      color: #fdda24;
+    .trofeus ul, .jogos ul {
+      list-style: none;
+      padding: 0;
     }
-    .card p {
-      margin: 0.25rem 0;
-      color: #ddd;
+    .trofeus li, .jogos li {
+      margin: 8px 0;
     }
     footer {
-      background: #000;
-      color: #fdda24;
       text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-      border-top: 2px solid #d4af37;
-    }
-    .highlight {
-      border: 2px solid #fdda24;
-    }
-    .credit {
-      font-size: 0.8rem;
-      color: #aaa;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 1rem;
-      background: #222;
-    }
-    th, td {
-      padding: 0.75rem;
-      border: 1px solid #444;
-      text-align: center;
-    }
-    th {
-      background: #000;
-      color: #fdda24;
-    }
-    td {
-      color: #eee;
+      padding: 15px;
+      background: #111;
+      border-top: 3px solid #FFD700;
+      margin-top: 30px;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Borussia Dortmund Frauen 2025/26</h1>
+    <h1>Borussia Dortmund Frauen 25/26</h1>
   </header>
 
   <nav>
     <a href="#elenco">Elenco</a>
-    <a href="#destaques">Destaques</a>
-    <a href="#noticias">Notícias</a>
+    <a href="#staff">Staff</a>
+    <a href="#trofeus">Troféus</a>
     <a href="#jogos">Próximos Jogos</a>
-    <a href="#staff">Comissão Técnica</a>
+    <a href="#destaques">Destaques</a>
+    <a href="#noticia">Notícia</a>
   </nav>
 
   <section id="elenco">
-    <h2>Elenco 2025/26</h2>
+    <h2>Elenco 25/26</h2>
+    <p>Confira o elenco oficial da temporada 25/26.</p>
     <div class="grid">
-      <div class="card"><h3>Laura van der Laan</h3><p>Goleira</p></div>
-      <div class="card"><h3>Minha Böger</h3><p>Defesa</p></div>
-      <div class="card"><h3>Jenske Steenwijk</h3><p>Defesa</p></div>
-      <div class="card"><h3>Jasmim Jabbes</h3><p>Ataque</p></div>
-      <div class="card"><h3>Hedda Wahle</h3><p>Defesa</p></div>
-      <div class="card"><h3>Mara Tayeh</h3><p>Defesa</p></div>
-      <div class="card"><h3>Noreen Günnewig</h3><p>Meio-campo</p></div>
-      <div class="card"><h3>Dana Marquardt</h3><p>Ataque</p></div>
-      <div class="card"><h3>Rita Schumacher</h3><p>Ataque</p></div>
-      <div class="card"><h3>Nora Willeke</h3><p>Meio-campo</p></div>
-      <div class="card"><h3>Paula Reimann</h3><p>Defesa</p></div>
-      <div class="card"><h3>Sara Ito</h3><p>Meio-campo</p></div>
-      <div class="card"><h3>Lúcia Wisniewski</h3><p>Ataque</p></div>
-      <div class="card"><h3>Ronja Leubner</h3><p>Meio-campo</p></div>
-      <div class="card"><h3>Celina Árvore</h3><p>Defesa</p></div>
-      <div class="card"><h3>Annika Enderle</h3><p>Ataque</p></div>
-      <div class="card"><h3>Ana-Sophie Vogel</h3><p>Defesa</p></div>
-      <div class="card"><h3>Frederike Kempe</h3><p>Defesa</p></div>
-      <div class="card"><h3>Melanie Schuster</h3><p>Defesa</p></div>
-      <div class="card"><h3>Carolina Blum</h3><p>Goleira</p></div>
-      <div class="card"><h3>Yasu Wöhrn</h3><p>Defesa</p></div>
-      <div class="card"><h3>Nova Wicke</h3><p>Meio-campo</p></div>
-      <div class="card"><h3>Emília Paulo</h3><p>Ataque</p></div>
-      <div class="card"><h3>Deniese Lichatschow</h3><p>Goleira</p></div>
-      <div class="card"><h3>Minha Scholle</h3><p>Ataque</p></div>
+      <div class="card"><strong>Laura van der Laan</strong><br>Goleira</div>
+      <div class="card"><strong>Minha Böger</strong><br>Defesa</div>
+      <div class="card"><strong>Jenske Steenwijk</strong><br>Defesa</div>
+      <div class="card"><strong>Jasmim Jabbes</strong><br>Ataque</div>
+      <div class="card"><strong>Hedda Wahle</strong><br>Defesa</div>
+      <div class="card"><strong>Mara Tayeh</strong><br>Defesa</div>
+      <div class="card"><strong>Noreen Günnewig</strong><br>Meio-campo</div>
+      <div class="card"><strong>Dana Marquardt</strong><br>Ataque</div>
+      <div class="card"><strong>Rita Schumacher</strong><br>Ataque</div>
+      <div class="card"><strong>Nora Willeke</strong><br>Meio-campo</div>
+      <div class="card"><strong>Paula Reimann</strong><br>Defesa</div>
+      <div class="card"><strong>Sara Ito</strong><br>Meio-campo</div>
+      <div class="card"><strong>Lúcia Wisniewski</strong><br>Ataque</div>
+      <div class="card"><strong>Ronja Leubner</strong><br>Meio-campo</div>
+      <div class="card"><strong>Celina Árvore</strong><br>Defesa</div>
+      <div class="card"><strong>Annika Enderle</strong><br>Ataque</div>
+      <div class="card"><strong>Ana-Sophie Vogel</strong><br>Defesa</div>
+      <div class="card"><strong>Frederike Kempe</strong><br>Defesa</div>
+      <div class="card"><strong>Melanie Schuster</strong><br>Defesa</div>
+      <div class="card"><strong>Carolina Blum</strong><br>Goleira</div>
+      <div class="card"><strong>Yasu Wöhrn</strong><br>Defesa</div>
+      <div class="card"><strong>Nova Wicke</strong><br>Meio-campo</div>
+      <div class="card"><strong>Emília Paulo</strong><br>Ataque</div>
+      <div class="card"><strong>Deniese Lichatschow</strong><br>Goleira</div>
+      <div class="card"><strong>Minha Scholle</strong><br>Ataque</div>
     </div>
-  </section>
-
-  <section id="destaques">
-    <h2>Destaques</h2>
-    <div class="grid">
-      <div class="card highlight">
-        <img src="https://www.darowski.com/bvb/assets/images/frauen/365/kuhl.jpg" alt="Vanessa Kuhl">
-        <h3>Vanessa Kuhl</h3>
-        <p>Ponta</p>
-        <p class="credit">Crédito: BVB / Darowski</p>
-      </div>
-      <div class="card highlight">
-        <img src="https://www.darowski.com/bvb/assets/images/frauen/365/grothe.jpg" alt="Marie Grothe">
-        <h3>Marie Grothe</h3>
-        <p>Atacante</p>
-        <p class="credit">Crédito: BVB / Darowski</p>
-      </div>
-      <div class="card highlight">
-        <img src="https://www.darowski.com/bvb/assets/images/frauen/365/reinhardt.jpg" alt="Mandy Reinhardt">
-        <h3>Mandy Reinhardt</h3>
-        <p>Atacante</p>
-        <p class="credit">Crédito: BVB / Darowski</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="noticias">
-    <h2>Notícias</h2>
-    <div class="card">
-      <img src="https://s7g10.scene7.com/is/image/BORUSSIADORTMUNDGMBHANDCOKGAA/Jubel-Frauen-Pokal-1:News-Teaser?ts=1755697416325&dpr=on,1&fmt=webp,,lossy&qlt=85" alt="BVB Frauen Notícias">
-      <h3>Vitória na Copa!</h3>
-      <p>O Borussia Dortmund Frauen conquista uma grande vitória na Copa, consolidando-se como uma das forças do futebol feminino.</p>
-      <p class="credit">Crédito: BVB / Scene7</p>
-    </div>
-  </section>
-
-  <section id="jogos">
-    <h2>Próximos Jogos</h2>
-    <table>
-      <tr><th>Data</th><th>Adversário</th><th>Competição</th><th>Local</th></tr>
-      <tr><td>10/09/2025</td><td>FC Köln</td><td>Bundesliga</td><td>Signal Iduna Park</td></tr>
-      <tr><td>18/09/2025</td><td>VfL Wolfsburg</td><td>Bundesliga</td><td>Volkswagen Arena</td></tr>
-      <tr><td>25/09/2025</td><td>Bayern München</td><td>Copa da Alemanha</td><td>Allianz Arena</td></tr>
-    </table>
   </section>
 
   <section id="staff">
-    <h2>Comissão Técnica</h2>
+    <h2>Staff 25/26</h2>
+    <p>Equipe técnica responsável pelo sucesso do Borussia Dortmund Frauen.</p>
     <div class="grid">
-      <div class="card"><h3>Marcos Högner</h3><p>Técnico Principal</p></div>
-      <div class="card"><h3>Tim Treude</h3><p>Assistente Técnico</p></div>
-      <div class="card"><h3>Dustin Wurst</h3><p>Assistente Técnico</p></div>
-      <div class="card"><h3>Josefina Plehn</h3><p>Treinadora de Goleiras</p></div>
-      <div class="card"><h3>Luísa Schulz</h3><p>Fisioterapeuta</p></div>
-      <div class="card"><h3>Benedito Terschluse</h3><p>Cientista Esportivo</p></div>
-      <div class="card"><h3>Marcel Merkel</h3><p>Líder de Gestão de Equipe</p></div>
-      <div class="card"><h3>Luísa Bergmann</h3><p>Gerente de Equipe</p></div>
+      <div class="card"><strong>Marcelo Zorn</strong><br>Técnico Principal</div>
+      <div class="card"><strong>Katrin Lehmann</strong><br>Assistente Técnica</div>
+      <div class="card"><strong>Peter Hoffmann</strong><br>Preparador Físico</div>
+      <div class="card"><strong>Lisa Krüger</strong><br>Fisioterapeuta</div>
+      <div class="card"><strong>Anna Müller</strong><br>Treinadora de Goleiras</div>
+      <div class="card"><strong>Felix Schneider</strong><br>Analista de Desempenho</div>
+    </div>
+  </section>
+
+  <section id="trofeus" class="trofeus">
+    <h2>Troféus Conquistados</h2>
+    <ul>
+      <li>🏆 Kreisliga A Campeãs 21/22</li>
+      <li>🏆 Bezirksliga 4 Campeãs 22/23</li>
+      <li>🏆 Landesliga Staffel 2 Campeãs 23/24</li>
+      <li>🏆 Verbandsliga Westfalen / Westfalenliga Campeãs 24/25</li>
+      <li>🏆 Kreispokal - 4 vezes seguidas (21/22 até 24/25)</li>
+    </ul>
+  </section>
+
+  <section id="jogos" class="jogos">
+    <h2>Próximos Jogos</h2>
+    <ul>
+      <li>31/08 - Borussia Dortmund Frauen 🆚 Köln II</li>
+      <li>07/09 - Borussia Dortmund Frauen 🆚 Gladbach II</li>
+    </ul>
+  </section>
+
+  <section id="destaques">
+    <h2>Destaques do Time</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://www.darowski.com/bvb/assets/images/frauen/365/schroer.jpg" alt="Sandra Schröer">
+        <p><strong>Sandra Schröer</strong><br>#1 • Goleira</p>
+      </div>
+      <div class="card">
+        <img src="https://www.darowski.com/bvb/assets/images/frauen/365/kuhl.jpg" alt="Vanessa Kuhl">
+        <p><strong>Vanessa Kuhl</strong><br>Uma das maiores jogadoras do time</p>
+      </div>
+      <div class="card">
+        <img src="https://www.darowski.com/bvb/assets/images/frauen/365/grothe.jpg" alt="Marie Grothe">
+        <p><strong>Marie Grothe</strong></p>
+      </div>
+      <div class="card">
+        <img src="https://www.darowski.com/bvb/assets/images/frauen/365/reinhardt.jpg" alt="Mandy">
+        <p><strong>Mandy</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="noticia">
+    <h2>Notícia</h2>
+    <div class="card">
+      <img src="https://s7g10.scene7.com/is/image/BORUSSIADORTMUNDGMBHANDCOKGAA/Jubel-Frauen-Pokal-1:News-Teaser?ts=1755697416325&dpr=on,1&fmt=webp,,lossy&qlt=85" alt="Comemoração BVB Frauen">
+      <p><strong>As campeãs seguem imparáveis!</strong><br>
+      O Borussia Dortmund Frauen comemora mais um título histórico, consolidando sua hegemonia no futebol feminino alemão.</p>
     </div>
   </section>
 
   <footer>
-    <p>© 2025 Borussia Dortmund Frauen. Todos os direitos reservados.</p>
+    <p>© 2025 Borussia Dortmund Frauen • Site criado para fins ilustrativos</p>
   </footer>
 </body>
 </html>
+
 
